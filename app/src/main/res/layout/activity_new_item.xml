@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NewItemFurniture">
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter name for new Item:"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/nameedit"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/initqtytext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/nameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter initial quantity:"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/initqtyedit"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/initqtytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+    <ImageView
+        android:id="@+id/newimages"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/imgselect"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/imgselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/initqtyedit"
+        android:text="Select image for item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>
